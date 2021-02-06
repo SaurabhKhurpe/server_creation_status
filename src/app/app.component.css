@@ -1,0 +1,12 @@
+h3{
+    color: darkorange;
+}
+app-successalert{
+    color: green;
+}
+app-warningalert{
+    color: red;
+}
+.white{
+    color: white;
+}

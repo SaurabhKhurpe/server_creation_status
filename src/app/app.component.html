@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- <h3> Sample </h3> -->
+      <!-- <hr> -->
+      <!-- <app-server></app-server> -->
+      <button class="btn" (click)="onToggle()"> Display Details </button>
+      <p *ngIf="showSecret"> Secret Password = tuna</p>
+      <div *ngFor="let logItem of log"
+      [ngStyle]="{ backgroundColor : logItem>=5 ? 'Orange' : 'Yellow'}"
+      [ngClass]="{ 'white' : logItem>=5 }">{{ logItem }}</div>
+    </div>
+  </div>
+</div>
